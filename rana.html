@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> Rana Shop </title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+          <div class="navbar">
+           <img src="css/logo.PNG" class="logo">   
+           <nav>
+            <div class="right-menu">
+                <button class="menu-button">Menu</button>
+                <div class="dropdown-menu">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Categories</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+           </nav>
+           </div>
+           <div class="content">
+            <a href="" class="btn"> 2023 collections</a>
+            <h1> You should always feel pretty</h1>
+            <p> Clothes that are sure to heat up your winter.</p>
+          </div>
+        </div>
+        <div id="modelBox">
+            <img src="css/close.PNG"  width="20%" class="close-icon" onclick="closeModel()">
+            <img src="css/pop.JPEG" width="100%">
+            <div class="offer-text">
+                <h2>Thanks for your visit</h2>
+                <form>
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit">Subscribe</button>
+                </form>
+        </div>
+        <script>
+            let modelBox = document.getElementById("modelBox");
+            document.onmouseleave =function(){
+                modelBox.style.display="block";
+            }
+            function closeModel(){
+                modelBox.style.display = "none";
+            }
+                
+        </script>
+    </body>
+</html>

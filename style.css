@@ -1,0 +1,121 @@
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("css/background.JPEG");
+    background-position: center;
+    background-size: cover;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    position: relative;
+}
+.navbar{
+    width: 100%;
+    height:15vh;
+    margin:auto;
+    display:flex;
+    align-items:center;
+}
+.logo{
+    width: 80px;
+    cursor: pointer;
+    padding-left: 10%;
+}
+nav{
+    flex:1;
+    padding-left: 60px;
+}
+.menu-button{
+    background-color:#6a7199;
+    color: black;
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.right-menu{
+    position: relative;
+    display: inline;
+    float: right;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 158px;
+    z-index: 1;
+}
+.dropdown-menu a:hover{
+    background-color:black;
+    color: white;
+}
+.right-menu:hover .dropdown-menu{
+    display: block;
+}
+.right-menu:hover .menu-button{
+    background-color: burlywood;
+}
+.content h1{
+    font-size: 50PX;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15PX;
+    color:black;
+
+}
+.content p{
+    font-size: 20px;
+    color: #6a7199;
+}
+.content{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.content .btn{
+    display: inline-block;
+    background: linear-gradient(45deg, #87adfe,#ff77cd);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 8px 22px rgba(94,28,0.15);
+}
+#modelBox{
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 190%;
+    max-width: 280px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+}
+.offer-text{
+    padding: 10px 20px 10px 10px;
+    font-size: 15px;
+    line-height: 10px;
+    color: burlywood;
+    display: inline-block;
+}
+.offer-text form{
+    margin-top: 1px;
+    display: flex;
+    background: #efefef;
+    border-radius: 1px;
+}
+.close-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top:5px;
+    right: 5px;
+    cursor: pointer;
+}
+    
+    
+    
